@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Agency</title>
+    <!-- Lien vers la feuille de style Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+        }
+
+        nav img {
+            max-width: 120px;
+            margin-bottom: 10px; /* Ajustez cette valeur pour descendre le logo */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f8f9fa;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero .left-side {
+            flex: 1;
+            padding: 50px;
+        }
+
+        .hero .right-side {
+            flex: 1;
+            padding: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+
+        .hero .btn-primary {
+            background-color: #ff5733;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .hero .btn-primary:hover {
+            background-color: #c44d2e;
+        }
+
+        /* Nouvelle section d'information */
+        .hero-info {
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-info .left-image {
+            flex: 1;
+        }
+
+        .hero-info .right-info {
+            flex: 2;
+            text-align: center;
+        }
+
+        .hero-info img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hero-info h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .hero-info p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .hero-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .hero-info ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        /* Section de support client */
+        #customer-support {
+            background-color: #f9f9f9; /* Couleur de fond pour la section */
+            padding: 50px 0;
+        }
+
+        #customer-support img {
+            max-width: 100%; /* Assurez-vous que l'image est responsive */
+            height: auto;
+        }
+
+        /* Section Vidéo */
+        #video {
+            padding: 50px 0;
+        }
+
+        .video-container {
+            max-width: 1000px; /* Largeur maximale pour la vidéo */
+            margin: 0 auto; /* Centrer la vidéo */
+        }
+
+        /* Section des caractéristiques */
+        .feature-icon {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .feature-icon img {
+            max-width: 80px; /* Ajustez la taille de l'icône selon vos besoins */
+            margin-bottom: 15px;
+        }
+
+        /* Section About */
+        .about {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Services Section */
+        .services .card {
+            border: none;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .services .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <section class="bg-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#home" class="d-flex align-items-center text-decoration-none" style="color: #1abc9c;">
+                <img src="images/logo.svg" alt="Startup Landing" style="max-width: 100px; margin-right: 10px;"> <!-- Logo -->
+                <span style="font-size: 1.5rem;">Startup Landing</span> <!-- Nom du logo -->
+            </a>
+            <div>
+                <a href="#home" class="text-decoration-none me-4" style="color: white;">Home</a>
+                <a href="#services" class="text-decoration-none me-4" style="color: white;">Services</a>
+                <a href="#why-customers-love-us" class="text-decoration-none me-4" style="color: white;">Testimonials</a>
+                <a href="#news" class="text-decoration-none me-4" style="color: white;">News</a>
+                <a href="#register" class="btn btn-outline-light">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="left-side">
+            <h1>Construisez votre avenir numérique avec nous</h1>
+            <a href="#contact" class="btn btn-primary">Contactez-nous</a>
+        </div>
+        <div class="right-side">
+            <img src="images/hero-image.png" alt="Image Hero" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Nouvelle section d'information -->
+    <div class="hero-info d-flex align-items-center">
+        <div class="left-image">
+            <img src="images/img5.png" alt="Information" class="img-fluid">
+        </div>
+        <div class="right-info text-center">
+            <h2>Boostez votre entreprise en choisissant notre agence</h2>
+            <p>Créez des pages sur mesure qui attirent plus de visiteurs que n'importe quel site, sans codage requis.</p>
+            <ul class="list-unstyled">
+                <li>Possibilité de design illimité</li>
+                <li>Fonctionnalités complètement réactives</li>
+                <li>Facile à personnaliser</li>
+            </ul>
+            <a href="#services" class="btn btn-primary mt-3">Découvrez nos services</a>
+        </div>
+    </div>
+
+    <!-- Section Vidéo -->
+    <section id="video" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Découvrez notre vidéo</h2>
+            <div class="video-container">
+                <iframe width="100%" height="500" src="https://www.bing.com/ck/a?!&&p=befb4ad67b77eb55e1301cb84174abdfdb8fa548fe55e1bcaaf05e008c61d314JmltdHM9MTczOTQwNDgwMA&ptn=3&ver=2&hsh=4&fclid=037e9624-a586-63fc-2f2d-8216a49c625a&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9YmVmb3JlK2xlYW5pbmcrYStqYXZhc2NyaXB0K2ZyYW1ld29yayZtaWQ9RkE0MjYwQjk0ODlDQTlCRjEzRDdGQTQyNjBCOTQ4OUNBOUJGMTNENyZGT1JNPVZBTVRSVg&ntb=1" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Why Customers Love Us -->
+    <section id="why-customers-love-us" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Pourquoi les clients nous aiment</h2>
+            <p>Administrez collaborativement des marchés renforcés via des réseaux plug-and-play. Procrastinez dynamiquement les utilisateurs B2C après la base installée.</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="images/i1.jpeg" alt="Ece Alkman" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                    <h5>Ece Alkman</h5>
+                    <p>Senior Marketer</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/i2.jpeg" alt="Natalia Sanz" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                    <h5>Natalia Sanz</h5>
+                    <p>Head of Technology</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/i3.jpeg" alt="Ece Alkman" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                    <h5>Ece Alkman</h5>
+                    <p>Senior Marketer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de support client -->
+    <section id="customer-support" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Support Client Gratuit</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/img6.png" alt="Support Client" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p>Nous offrons une période d'essai sans risque de deux semaines. Vous n'aurez à payer que si vous êtes satisfait du développeur et souhaitez continuer. Si vous n'êtes pas satisfait, nous rembourserons le paiement pour les problèmes rencontrés par nos clients.</p>
+                    <p>Si vous êtes satisfait du développeur et souhaitez continuer, nous rembourserons le paiement pour les problèmes.</p>
+                    <a href="#services" class="btn btn-primary mt-3">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des caractéristiques -->
+    <section id="features" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-5">Caractéristiques intéressantes</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature-icon">
+                        <img src="images/im1.PNG" alt="Personnalisation Illimitée" class="img-fluid">
+                        <h4>Personnalisation Illimitée</h4>
+                        <p>Obtenez votre design sur mesure pour répondre à tous vos besoins.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-icon">
+                        <img src="images/im2.PNG" alt="Forme Vectorielle" class="img-fluid">
+                        <h4>Forme Vectorielle & Redimensionnable</h4>
+                        <p>Des designs flexibles qui s'adaptent à toutes les tailles d'écran.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-icon">
+                        <img src="images/im3.PNG" alt="Liberté d'Édition" class="img-fluid">
+                        <h4>Liberté d'Édition</h4>
+                        <p>Modifiez votre contenu facilement sans compétences techniques.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-icon">
+                        <img src="images/im4.PNG" alt="Meilleure Historique de Récompenses" class="img-fluid">
+                        <h4>Meilleure Historique de Récompenses</h4>
+                        <p>Profitez de notre expérience et de notre réputation dans l'industrie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container text-center">
+            <h2 class="mb-4">Qui sommes-nous ?</h2>
+            <p>Nous sommes une agence digitale spécialisée dans la création de solutions web sur mesure pour les
+                entreprises de toutes tailles.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/img2.png" class="card-img-top" alt="Création de sites web">
+                        <div class="card-body">
+                            <h5 class="card-title">Création de Sites Web</h5>
+                            <p class="card-text">Nous créons des sites web professionnels et sur mesure adaptés à vos
+                                besoins.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/img3.png" class="card-img-top" alt="Design UX/UI">
+                        <div class="card-body">
+                            <h5 class="card-title">Design UX/UI</h5>
+                            <p class="card-text">Nous optimisons l'expérience utilisateur avec des designs intuitifs et
+                                modernes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/img4.png" class="card-img-top" alt="Consultation Digitale">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultation Digitale</h5>
+                            <p class="card-text">Obtenez des conseils d'experts pour transformer numériquement votre
+                                entreprise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contactez-nous</h2>
+            <form action="envoyer.php" method="POST">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" name="message" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section Hire Developers -->
+    <section id="hire-developers" class="py-5 text-center" style="background-color: #6f2c91; color: white;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem;">Hire the world’s best developers</h2>
+            <p>and designers around!</p>
+            <a href="#contact" class="btn btn-light mt-3" style="padding: 10px 20px; text-decoration: none; color: #6f2c91;">HIRE DEVELOPERS</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Startup Agency. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers le script JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
